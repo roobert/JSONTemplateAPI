@@ -8,7 +8,7 @@ Post JSON to an API which can be used in templates that are then commited to a g
 
 ```
 # checkout repo
-git clone https://github.com/roobert/HieraNodeAPI
+git clone https://github.com/roobert/JSONTemplateAPI
 
 # create remote repo to store remote hiera data
 cd HieraNodeAPI/data
