@@ -1,0 +1,9 @@
+---
+chdir: /opt/JSONTemplateAPI
+address: 0.0.0.0
+port: 7399
+log: var/log/json_template_api.log
+pid: var/run/json_template_api.pid
+max_conns: 128
+daemonize: false
+tag: json_template_api

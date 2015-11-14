@@ -17,7 +17,7 @@ module JSONTemplateAPI
       end
 
       def config
-        @config ||= YAML.load_file(File.join(app_root, 'config.yaml'))
+        @config ||= YAML.load_file(File.join(app_root, 'config.yml'))
       end
     end
 
