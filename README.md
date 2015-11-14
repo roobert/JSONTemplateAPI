@@ -11,7 +11,7 @@ Post JSON to an API which can be used in templates that are then commited to a g
 git clone https://github.com/roobert/JSONTemplateAPI
 
 # create remote repo to store remote hiera data
-cd HieraNodeAPI/data
+cd JSONTemplateAPI/data
 git init
 echo "# hiera node repo" > README.md
 git add README.md
