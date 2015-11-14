@@ -33,6 +33,5 @@ curl localhost:7399/server/add -XPOST -H 'Content-Type: application/json' -d \
   '{ "vlan": 11,
      "last_octet": "200",
      "filename": "my.node.example.yaml",
-     "template": "node.yaml.erb"
-  }'
+     "template": "node.yaml.erb" }'
 ```
