@@ -29,7 +29,7 @@ git push -u origin master
 ## Run
 
 ```
-rackup
+thin --config thin.yml
 ```
 
 ## Test
