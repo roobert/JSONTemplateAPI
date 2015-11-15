@@ -4,6 +4,7 @@ After=syslog.target
 
 [Service]
 Type=simple
+User=jt-api
 ExecStart=/usr/local/bin/thin -C /opt/json_template_api/thin.yml start
 Restart=always
 
