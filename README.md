@@ -1,4 +1,4 @@
-# JSONTemplateAPI
+# json_template_api
 
 ## About
 
@@ -14,10 +14,10 @@ gem install grape rack erubis git yaml thin
 
 ```
 # checkout repo
-git clone https://github.com/roobert/JSONTemplateAPI /opt/JSONTemplateAPI
+git clone https://github.com/roobert/json_template_api /opt/json_template_api
 
 # create remote repo to store remote hiera data
-cd /opt/JSONTemplateAPI/data
+cd /opt/json_template_api/data
 git init
 echo "# hiera node repo" > README.md
 git add README.md
