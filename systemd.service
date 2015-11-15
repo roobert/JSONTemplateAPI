@@ -3,10 +3,9 @@ Description=JSON Template API
 After=syslog.target
 
 [Service]
-Type=dbus
-BusName=com.github.roobert.json_template_api
-ExecStart=/usr/local/bin/thin start -C /opt/json_template_api/thin.yml start
-Restart=restart-always
+Type=simple
+ExecStart=/usr/local/bin/thin -C /opt/json_template_api/thin.yml start
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
