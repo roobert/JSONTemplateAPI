@@ -12,16 +12,5 @@ network::interfaces_hash:
     vlan_raw_device: 'bond0'
     pre_down:
       - 'ifdown bond0'
-
-network::routes_hash:
-  'default':
-    ipaddress:
-      - '10.0.<%= params['vlan'] -%>.0'
-    gateway:
-      - '10.0.<%= params['vlan'] -%>.<%= params['last_octet'] -%>'
-    interface: 'vlan<%= params['vlan'] -%>'
-
-  '10.0.0.0':
-    gateway:
-      - '10.0.<%= params['vlan'] -%>.<%= params['last_octet'] -%>'
-    interface: 'vlan<%= params['vlan'] -%>'
+    post_up:
+      - 'ip r a 10.0.0.0/8 via 10.0.<%= params['vlan'] -%>.<%= params['last_octet'] -%> via vlan<%= params['vlan'] -%>'
