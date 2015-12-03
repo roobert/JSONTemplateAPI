@@ -8,7 +8,7 @@ module JSONTemplateAPI
   module Git
     def self.commit(data_dir: nil, comment: nil)
       repo = ::Git.open(data_dir, log: Logger.new(STDOUT))
-      repo.pull
+      repo.pull('origin', 'production')
       repo.add(all: true)
       repo.commit(comment)
       repo.push
